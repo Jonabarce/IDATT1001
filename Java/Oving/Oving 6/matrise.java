@@ -16,7 +16,7 @@ public static void main (String[]args){
 
 
         if(choice == 1){
-            System.out.println( " What would you like to do? \n Press the following numbers: \n 1: Multiply two matrices togheter \n 2: Transpose one matrice \n 3: Addere two matrices togheter ");
+            System.out.println( " What would you like to do? \n Press the following numbers: \n 1: Multiply two matrices togheter \n 2: Transpose one matrice \n 3: Add two matrices togheter ");
             int choice2 = input.nextInt();
 
             if(choice2 == 1){ //multiply
@@ -54,7 +54,7 @@ public static void main (String[]args){
                 
             }
 
-            if(choice2 == 3){ //addere
+            if(choice2 == 3){ //add
 
                 System.out.println( " Please type in total colums on the two matrices ");
                 int colums = input.nextInt();
@@ -65,6 +65,7 @@ public static void main (String[]args){
                 matriseregning matrix2 =  new matriseregning(colums, rows);
 
                 System.out.println(matrix.toString());
+                System.out.println(matrix2.toString());
 
                 System.out.println(matrix.addere(matrix).toString());
                 
