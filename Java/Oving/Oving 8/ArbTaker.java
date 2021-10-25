@@ -65,7 +65,7 @@ public class ArbTaker {
         return taxDeductions;
     }
 
-    String getName(){
+    private String getName(){
         String name = this.getPersonalia().getLastName() + " , " + this.getPersonalia().getFirstName();
         return name;
     }
