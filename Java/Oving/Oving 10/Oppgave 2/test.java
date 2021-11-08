@@ -16,10 +16,7 @@ public class test {
         String type = "Whatever2";
         System.out.println(test.DishType(type).toString());
 
-        double min = 100;
-        double max = 1000;
-
-
+       
 
     }
 }
