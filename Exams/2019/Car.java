@@ -2,8 +2,7 @@ package com.Documents;
 
 public class Car {
 
-    private String firstLettersReg;
-    private int fiveDigitAfterLetter;
+    private String regNr;
     private int yearMade;
     private String colorOfCar;
     private String gear;
@@ -15,8 +14,7 @@ public class Car {
     /**
      * New Car
      * This one can be used if the firm would like to register a new car with also registration plate
-     * @param firlettersReg
-     * @param fiveDigitAfterLetter
+     * @param regNr
      * @param yearMade
      * @param colorOfCar
      * @param gear
@@ -25,10 +23,9 @@ public class Car {
      * @param horsepower
      * @param brand
      */
-    public Car(String firlettersReg, int fiveDigitAfterLetter, int yearMade, String colorOfCar, String gear, String fuel, double price, int horsepower, String brand){
+    public Car(String regNr,int yearMade, String colorOfCar, String gear, String fuel, double price, int horsepower, String brand){
 
-        this.firstLettersReg = firlettersReg;
-        this.fiveDigitAfterLetter = fiveDigitAfterLetter;
+        this.regNr = regNr;
         this.yearMade =  yearMade;
         this.colorOfCar = colorOfCar;
         this.gear = gear;
@@ -52,31 +49,24 @@ public class Car {
      * @param horsepower
      * @param colorOfCar
      */
-    public Car(double price, int yearMade, String fuel, String gear, int horsepower, String colorOfCar) {
+    public Car(double price, int yearMade, String fuel, String gear, int horsepower, String colorOfCar, String regNr) {
         this.price = price;
         this.yearMade = yearMade;
         this.fuel = fuel;
         this.gear = gear;
         this.horsepower = horsepower;
         this.colorOfCar = colorOfCar;
+        this.regNr = regNr;
     }
 
     /**
-     * Get first letters in the registration sign
-     * @return first letters in the registration sign
+     * Get the registration number
+     * @return the registration number
      */
-    public String getFirstLettersReg() {
-        return firstLettersReg;
+    public String getRegNr() {
+        return regNr;
     }
-
-    /**
-     * Get the five digits after the letters
-     * @return The five digits after the letters
-     */
-    public int getFiveDigitAfterLetter() {
-        return fiveDigitAfterLetter;
-    }
-
+    
     /**
      * Get the year the car was made
      * @return The year the car was made
@@ -131,14 +121,6 @@ public class Car {
      */
     public String getBrand() {
         return brand;
-    }
-
-    /**
-     * Get the fully registration plate
-     * @return Fully registration plate
-     */
-    public String getId(){
-        return firstLettersReg + fiveDigitAfterLetter;
     }
 
     /**
