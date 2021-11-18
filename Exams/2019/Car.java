@@ -49,14 +49,13 @@ public class Car {
      * @param horsepower
      * @param colorOfCar
      */
-    public Car(double price, int yearMade, String fuel, String gear, int horsepower, String colorOfCar, String regNr) {
+    public Car(double price, int yearMade, String fuel, String gear, int horsepower, String colorOfCar) {
         this.price = price;
         this.yearMade = yearMade;
         this.fuel = fuel;
         this.gear = gear;
         this.horsepower = horsepower;
         this.colorOfCar = colorOfCar;
-        this.regNr = regNr;
     }
 
     /**
@@ -66,7 +65,7 @@ public class Car {
     public String getRegNr() {
         return regNr;
     }
-    
+
     /**
      * Get the year the car was made
      * @return The year the car was made
