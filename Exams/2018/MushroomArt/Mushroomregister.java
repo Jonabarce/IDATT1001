@@ -28,7 +28,7 @@ public class Mushroomregister {
             MushroomArt newMushroomArt = new MushroomArt(name,description,edible);
             MushroomArts.add(newMushroomArt);
         } else{
-            System.out.println(" Error! This Arrangemnet does already exist ");
+            System.out.println(" Error! This Mushroom art is already registered ");
         }
     }
 
