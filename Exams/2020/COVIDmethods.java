@@ -30,7 +30,7 @@ public class COVIDmethods {
 
         boolean test = false;
         for (int i = 0; i < COVIDregisters.size(); i++) {
-            if (a.isEqual(COVIDregisters.get(i).getDate()) && a.equals(COVIDregisters.get(i).getCountry())) {
+            if (fullDate.isEqual(CovidRegistrations.get(i).getFullDate()) && (CovidRegistrations.get(i).getCountry()).equals(country)) {
                 test = true;
             }
         }
