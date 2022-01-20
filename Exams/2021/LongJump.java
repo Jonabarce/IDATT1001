@@ -1,10 +1,5 @@
 package com.Documents;
 
-// I just have to say that i chose not to add any mutator methods
-// This is because i feel like it is not necessary
-// I feel like this is high level competetion and they rarely make mistakes
-// For example the results, that is carefully controlled before writing down the results
-
 
 
 import java.time.LocalTime;
