@@ -49,20 +49,6 @@ public class LongJumpRegister {
         }
 
     }
-
-    //Comment to the method below
-    //As i understood the task we were only supposed to print out the results
-    //Then the line 70 would look like this:
-    //long_jumps += longJumps.get(i).getResults + "meters" + "\n";
-    //However i felt like i should print out more than just the results
-    //Therefore line 70 looks like it does
-    //The outprint looks like this:
-    //Startnumber: 210 Name: Malaika Mihambo Result(meter): 6.98 Valid jump: Yes Time: 10:15
-    //Startnumber: 210 Name: Malaika Mihambo Result(meter): 6.99 Valid jump: Yes Time: 10:25
-    //Startnumber: 211 Name: Tara Davis Result(meter): 6.85 Valid jump: Yes Time: 10:17
-    //Startnumber: 204 Name: Brittney Reese Result(meter): 6.52 Valid jump: Yes Time: 10:19
-    //which I think looks good
-    //This is just to show that i know how to do both
     /**
      * Method to print out all registered long jumps
      * @return String with all the registered long jumps
